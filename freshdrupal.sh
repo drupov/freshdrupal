@@ -8,7 +8,7 @@ mysql -u "root" -e "CREATE DATABASE $siteName;"
 # --drupal-project-rename creates errors so for now as a workaround just hardcode the latest drupal version.
 # drush pm-download drupal --drupal-project-rename=$siteName
 drush pm-download drupal -y
-mv drupal-7.17 $siteName
+mv drupal-7.19 $siteName
 
 # Go to the root of the the site so that the drush commands could apply there.
 cd $siteName
