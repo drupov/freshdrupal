@@ -2,5 +2,5 @@ You can create quickly a drupal environment for testing with this script. As it 
 
 Also feel free to add and enable modules that you think are important for your development or testing purposes. The modules that are available here are just the ones I find useful as a starting point.
 
-## Installation instructions
+### Installation instructions
 type `freshdrupal.sh project-name`
