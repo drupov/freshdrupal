@@ -1,6 +1,9 @@
 # The site name should be passed in as a first parameter to the shell script.
 siteName=$1
 
+# Drop the database with the specified name if it exists
+mysql -u "root" -e "DROP DATABASE $siteName;"
+
 # Create a database with the same name as the site name.
 mysql -u "root" -e "CREATE DATABASE $siteName;"
 
