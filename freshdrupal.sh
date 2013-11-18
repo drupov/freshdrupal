@@ -14,6 +14,11 @@ drush pm-download drupal --drupal-project-rename=$siteName
 # Go to the root of the the site so that the drush commands could apply there.
 cd $siteName
 
+# Create modules directory structure
+mkdir sites/all/modules/contrib
+mkdir sites/all/modules/custom
+mkdir sites/all/modules/features
+
 # Initialize the site install, with user:pass = admin:admin
 drush site-install standard --account-name=admin --account-pass=admin --db-url=mysql://root:@localhost/$siteName --site-name=$siteName -y
 
