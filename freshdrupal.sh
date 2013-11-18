@@ -27,10 +27,10 @@ drush pm-disable toolbar -y
 drush pm-uninstall toolbar -y
 
 # Download a bunch of useful modules, that would be used on almost any site.
-drush pm-download ctools entity devel views admin_menu token libraries module_filter globalredirect rules search_krumo features strongarm diff fpa addanother -y
+drush pm-download ctools entity devel views admin_menu token libraries module_filter globalredirect rules search_krumo features strongarm diff fpa addanother backup_migrate -y
 
 # Enable those modules.
-drush pm-enable ctools page_manager entity devel devel_generate views views_ui admin_menu admin_menu_toolbar token libraries module_filter globalredirect rules rules_admin search_krumo features strongarm diff fpa addanother -y
+drush pm-enable ctools page_manager entity devel devel_generate views views_ui admin_menu admin_menu_toolbar token libraries module_filter globalredirect rules rules_admin search_krumo features strongarm diff fpa addanother backup_migrate -y
 
 # Initialize git and make an initial commit.
 # git init
