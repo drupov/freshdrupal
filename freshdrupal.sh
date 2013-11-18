@@ -22,6 +22,11 @@ mkdir sites/all/modules/features
 # Initialize the site install, with user:pass = admin:admin
 drush site-install standard --account-name=admin --account-pass=admin --db-url=mysql://root:@localhost/$siteName --site-name=$siteName -y
 
+# Create a modules directory structure
+mkdir sites/all/modules/contrib
+mkdir sites/all/modules/custom
+mkdir sites/all/modules/features
+
 # Disable and uninstall some modules, activated by default.
 drush pm-disable toolbar -y
 drush pm-uninstall toolbar -y
