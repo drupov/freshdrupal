@@ -22,7 +22,7 @@ mkdir modules/custom
 drush site-install standard --account-name=admin --account-pass=admin --db-url=mysql://root:@localhost/$siteName --site-name=$siteName -y
 
 # Download a bunch of useful modules, that would be used on almost any site.
-drush pm-download admin_toolbar -y
+drush pm-download admin_toolbar devel page_manager -y
 
 # Enable those modules.
-drush pm-enable admin_toolbar_tools -y
+drush pm-enable admin_toolbar_tools devel devel_generate kint page_manager -y
