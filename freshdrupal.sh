@@ -30,4 +30,4 @@ drush pm-uninstall toolbar overlay -y
 drush pm-download ctools entity devel views admin_menu token libraries module_filter rules search_krumo features strongarm diff fpa -y
 
 # Enable those modules.
-drush pm-enable ctools page_manager entity devel devel_generate views views_ui admin_menu_toolbar token libraries module_filter rules_admin search_krumo features strongarm diff fpa -y
+drush pm-enable page_manager entity devel devel_generate views_ui admin_menu_toolbar token libraries module_filter rules_admin search_krumo features strongarm diff fpa -y
