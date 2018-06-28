@@ -27,7 +27,7 @@ drush pm-disable toolbar overlay -y
 drush pm-uninstall toolbar overlay -y
 
 # Download a bunch of useful modules, that would be used on almost any site.
-drush pm-download ctools entity entityreference devel views admin_menu token libraries module_filter rules search_krumo features strongarm diff fpa -y
+drush pm-download ctools coffee entity entityreference devel views admin_menu token libraries module_filter rules search_krumo features strongarm diff fpa -y
 
 # Enable those modules.
-drush pm-enable page_manager entityreference devel devel_generate views_ui admin_menu_toolbar token libraries module_filter rules_admin search_krumo features strongarm diff fpa -y
+drush pm-enable coffee page_manager entityreference devel devel_generate views_ui admin_menu_toolbar token libraries module_filter rules_admin search_krumo features strongarm diff fpa -y
